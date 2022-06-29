@@ -1,0 +1,38 @@
+CANTV Logo
+- X = 624px
+- Y = 109px
+- W = 199px
+- H = 174px
+
+VS Text
+- X = 640px
+- Y = 360px
+original dimensions
+
+Top Bar
+- X = 320px
+- Y = 110px
+original dimensions
+
+Bottom Bar
+- X = 640px
+- Y = 660px
+original dimensions
+
+Round Name Boundary
+- X = 630px
+- Y = 666px
+- W = 526px
+- H = 62px
+
+Left Player Name Boundary
+X = 274px
+Y = 113px
+W = 420px
+H = 70px
+
+Right Player Name Boundary
+X = 997px
+Y = 113px
+W = 420px
+H = 70px

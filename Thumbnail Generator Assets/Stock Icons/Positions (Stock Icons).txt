@@ -1,0 +1,22 @@
+Left Side:
+
+1
+X = 38px
+Y = 562px
+
+2
+X = 100px
+Y = 562px
+
+Right Side:
+
+1
+X = 1242px
+Y = 562px
+
+2
+X = 1180px
+Y = 562px
+
+
+Dimensions: 52 x 52px

@@ -1,0 +1,32 @@
+Right Side: X = 960px
+Left Side: X = 286px
+Y = 425px
+
+
+Dimensions:
+
+Fox Default Pose 1
+- W = 457px
+- H = 443px
+Fox Default Pose 2
+- W = 450px
+- H = 452px
+Fox Blue Pose 1
+- W = 409px
+- H = 492px
+Fox Blue Pose 2
+- W = 390px
+- H = 520px
+Fox Green Pose 1
+- W = 309px
+- H = 502px
+Fox Green Pose 2
+- W = 416px
+- H = 466px
+Fox Red Pose 1
+- W = 380px
+- H = 393px
+Fox Red Pose 2
+- W = 566px
+- H = 467px
+
