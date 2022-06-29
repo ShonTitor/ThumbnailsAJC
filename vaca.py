@@ -1,8 +1,8 @@
+from pickletools import optimize
 from PIL import Image, ImageDraw, ImageOps
 from font import fit_text
 import os
 
-MAIN_COLORS = ((254, 128, 67), (0, 117, 251))
 CANVAS_SIZE = (1280, 720)
 LOGO_PATH = os.path.join("Thumbnail Generator Assets", "Design Elements", "Can'tv Logo.png")
 VS_PATH = os.path.join("Thumbnail Generator Assets", "Design Elements", "VS Text.png")
@@ -23,6 +23,7 @@ def generate_thumbnail(data):
     right_color = data["right_player"]["character"]["color"]
     right_pose = data["right_player"]["character"]["pose"]
     RIGHT_PATH = os.path.join("Thumbnail Generator Assets", right_name, f"{right_name} {right_color} Pose {right_pose}.png")
+    MAIN_COLORS = data["colors"]
 
     # Left Square
     shape = [(0, 0), (CANVAS_SIZE[0]//2, CANVAS_SIZE[1])]
@@ -107,27 +108,31 @@ def generate_thumbnail(data):
     
     return canvas
 
-"""data = {
-    "left_player": {
-        "name": "BLEA GELO",
-        "character": {
-            "name": "Falco",
-            "color": "Green",
-            "pose": 1,
-            "flip": False
+if __name__ == "__main__":
+    print("vaca")
+    data = {
+        "left_player": {
+            "name": "BLEA GELO",
+            "character": {
+                "name": "Falco",
+                "color": "Green",
+                "pose": 1,
+                "flip": False
+            },
+            "secondaries": ["Falcon", "Marth"]
         },
-        "secondaries": ["Falcon", "Marth"]
-    },
-    "right_player": {
-        "name": "WEED (L)",
-        "character": {
-            "name": "Fox",
-            "color": "Red",
-            "pose": 1,
-            "flip": False
+        "right_player": {
+            "name": "WEED (L)",
+            "character": {
+                "name": "Fox",
+                "color": "Red",
+                "pose": 1,
+                "flip": False
+            },
+            "secondaries": []
         },
-        "secondaries": []
-    },
-    "round": "GRANDFINALS",
-    "date": "1/09/2021"
-}"""
+        "round": "GRANDFINALS",
+        "date": "1/09/2021",
+        "colors": ((0, 117, 251), (254, 128, 67))
+    }
+    generate_thumbnail(data).save("sample.png", optimize=True)
