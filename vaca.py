@@ -94,7 +94,7 @@ def generate_thumbnail(data):
         canvas.paste(item.convert("RGB"), items_position[i], mask=alpha)
 
     # Text
-    text_content = [data["left_player"]["name"], data["right_player"]["name"], "GRANDFINALS", "1/09/2021"]
+    text_content = [data["left_player"]["name"], data["right_player"]["name"], "round", "date"]
     text_bound = [(64, 78, 484, 148), (787, 78, 1207, 148), (367, 635, 893, 697), (1070, 5, 1278, 46)]
     text_max_size = [63, 63, 100, 50]
     text_color = [(0,0,0), (0,0,0), (255, 255, 255), (255, 255, 255)]
